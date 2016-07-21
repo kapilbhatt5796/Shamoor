@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="description" content="">
+  <meta name="author"      content="">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+  <title>PracticeMock</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>  
+
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <script src="js/modernizr.js"></script>
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200,400,600|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Custom styles for our template -->
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/sl-slide.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/sl-slide.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+ 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+ 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+a:hover{
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
+}
+
+a:active{
+  color: inherit;
+}
+
+a:link{
+  color: inherit;
+}
+ .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+#sec{
+  width : 100%;
+  height : 500px;
+  background-image : url("images/back.jpg");
+}
+
+#sec2{
+  width : 100%;
+  height : 400px;
+  background-color: #dfe3ed;
+}
+
+
+
+#sfmt{
+  padding-top: 30px;  
+  font-size: 300%;
+  text-align: center;
+  font-weight: 800;
+  color: #FFFFFF;
+
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+ul#menub li {
+    display:inline;
+    text-align: center;
+}
+
+li#menub2{
+  float: right;
+  padding-right: 10px;
+}
+
+li#menub1{
+  float: left;
+  padding-left: 10px;
+}
+
+.modal-footer {   border-top: 0px; }
+
+
+a{
+  color: inherit;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.jumbotron{width:80%;margin-left:10%;max-width: 1200px;margin-left:auto; margin-right:auto;}
+.img-center {margin:0 auto;}
+.dl-horizontal dt{white-space: normal;}
+.omacenter{margin-left:auto; margin-right:auto;}
+.titre{color:#fff;}
+.entete{background-color: #22780F;width:80%;margin-left:10%;}
+
+</style>
+
+
+
+</head>
+
+<body class="page-home" style="background-color : #ffffff;" >
+
+  <!-- fixed navbar -->
+  <!-- fixed navbar -->
+  <div class= "navbar navbar-dual navbar-inverse navbar-fixed-top headroom ontop-now" style="background-color : #ffffff;">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo1.png" alt="Progressus HTML5 template">
+          <img src="images/logo1.png" alt="Progressus HTML5 template" class="secondary">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="index.html" style="color : #8b9dc3">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" style="color : #8b9dc3">Tets Packages</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html" style="color : #8b9dc3">A</a></li>
+              <li><a href="portfolio.html" style="color : #8b9dc3">B</a></li>
+              <li><a href="portfolio-item.html" style="color : #8b9dc3">C</a></li>
+              <li><a href="blog.html" style="color : #8b9dc3">D</a></li>
+              <li><a href="single.html" style="color : #8b9dc3">E</a></li>
+              <li><a href="about.html" style="color : #8b9dc3">F</a></li>
+              <li><a href="sidebar-left.html" style="color : #8b9dc3">G</a></li>
+              <li><a href="sidebar-right.html" style="color : #8b9dc3">H</a></li>
+              <li><a href="contact.html" style="color : #8b9dc3">I</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" style="color : #8b9dc3">More Pages <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html" style="color : #8b9dc3">A</a></li>
+              <li><a href="portfolio.html" style="color : #8b9dc3">B</a></li>
+              <li><a href="portfolio-item.html" style="color : #8b9dc3">C</a></li>
+              <li><a href="blog.html" style="color : #8b9dc3">D</a></li>
+              <li><a href="single.html" style="color : #8b9dc3">E</a></li>
+              <li><a href="about.html" style="color : #8b9dc3">F</a></li>
+              <li><a href="sidebar-left.html" style="color : #8b9dc3">G</a></li>
+              <li><a href="sidebar-right.html" style="color : #8b9dc3">H</a></li>
+              <li><a href="contact.html" style="color : #8b9dc3">I</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color : #8b9dc3">Contact</a></li>
+          
+          <li><a href="#" data-toggle="modal" data-target="#login-modal" style="border-style: solid; color : #3b5999">SIGN IN / SIGN UP</a></li>
+            </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- end of fixed navbar -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Login to Your Account</h1><br>
+          <form>
+          <input type="text" style="border-radius : 10px;"  name="user" placeholder="Username">
+          <input type="text" style="border-radius : 10px;"  name="pass" placeholder="Password">
+          <button id="singlebutton" style="margin-right : 7px;  text-align : center; width : 90%; border-radius :10px; background-color : #3b5999; " name="singlebutton" class="btn btn-primary center-block">
+          Log In
+       </button>
+          </form>
+          <hr>
+          <div class="login-help">
+              <ul id="menub">
+                  <li id="menub1"><a href="signup.html">Sign Up</a></li>
+                  <li id="menub2"><a href="#" data-target="#pwdModal" data-toggle="modal">Forgot my password</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">What's My Password?</h1>
+      </div>
+      <div class="modal-body">
+          <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                          
+                          <p>If you have forgotten your password you can reset it here.</p>
+                            <div class="panel-body">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" style="width : 100%" style="border-radius : 10px;" placeholder="E-mail Address" name="email" type="email">
+                                    </div>
+                                    <input class="btn btn-lg btn-primary btn-block" style="background-color : #3b5999; border-radius : 10px; " value="Send My Password" type="submit">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12"></div>  
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+  <!-- header -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/carousel.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="  text-align: left; font-size : 40px; color : #8b9dc3;">ONLINE TEST</h1>
+              <h2 style="text-align: left; color : #8b9dc3;">IMPROVE YOUR SKILLS</h2>              
+              <p style="text-align: left; color : #8b9dc3;"><a class="btn btn-lg btn-primary" style="border-radius : 10px; background-color : #3b5999;" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/carousel.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p><a class="btn btn-lg btn-primary" style="border-radius : 10px; background-color : #3b5999;" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/carousel.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p><a class="btn btn-lg btn-primary" style="border-radius : 10px; background-color : #3b5999;" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+  
+    
+
+  <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h1>123</h1>
+          <h2>Heading</h2>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h1>123</h1>
+          <h2>Heading</h2>
+        </div>
+        <div class="col-lg-4">
+          <h1>123</h1>
+          <h2>Heading</h2>
+        </div>
+      </div><!-- /.row -->
+
+    </div>
+    <hr>
+
+<br>
+<br>
+
+
+
+
+<div class="cd-faq-items">
+    <ul id="basics" class="cd-faq-group">
+      <li class="cd-faq-title"><h2>Basics</h2></li>
+      <li>
+        <a class="cd-faq-trigger" href="#0">How do I change my password?</a>
+        <div class="cd-faq-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quidem blanditiis delectus corporis, possimus officia sint sequi ex tenetur id impedit est pariatur iure animi non a ratione reiciendis nihil sed consequatur atque repellendus fugit perspiciatis rerum et. Dolorum consequuntur fugit deleniti, soluta fuga nobis. Ducimus blanditiis velit sit iste delectus obcaecati debitis omnis, assumenda accusamus cumque perferendis eos aut quidem! Aut, totam rerum, cupiditate quae aperiam voluptas rem inventore quas, ex maxime culpa nam soluta labore at amet nihil laborum? Explicabo numquam, sit fugit, voluptatem autem atque quis quam voluptate fugiat earum rem hic, reprehenderit quaerat tempore at. Aperiam.</p>
+        </div> <!-- cd-faq-content -->
+      </li>
+
+      <li>
+        <a class="cd-faq-trigger" href="#0">How do I sign up?</a>
+        <div class="cd-faq-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate et laudantium esse adipisci consequatur modi possimus accusantium vero atque excepturi nobis in doloremque repudiandae soluta non minus dolore voluptatem enim reiciendis officia voluptates, fuga ullam? Voluptas reiciendis cumque molestiae unde numquam similique quas doloremque non, perferendis doloribus necessitatibus itaque dolorem quam officia atque perspiciatis dolore laudantium dolor voluptatem eligendi? Aliquam nulla unde voluptatum molestiae, eos fugit ullam, consequuntur, saepe voluptas quaerat deleniti. Repellendus magni sint temporibus, accusantium rem commodi?</p>
+        </div> <!-- cd-faq-content -->
+      </li>
+
+      <li>
+        <a class="cd-faq-trigger" href="#0">Can I remove a post?</a>
+        <div class="cd-faq-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+        </div> <!-- cd-faq-content -->
+      </li>
+
+      <li>
+        <a class="cd-faq-trigger" href="#0">How do reviews work?</a>
+        <div class="cd-faq-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis provident officiis, reprehenderit numquam. Praesentium veritatis eos tenetur magni debitis inventore fugit, magnam, reiciendis, saepe obcaecati ex vero quaerat distinctio velit.</p>
+        </div> <!-- cd-faq-content -->
+      </li>
+    </ul> <!-- cd-faq-group -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+  <div class="container"> 
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 equal">
+                <div class="col-lg-6">
+                    <div class="tag-box tag-box-v6 box-shadow shadow-effect-2" style="text-align : center;  "> 
+                        <div class="headline">
+                        <h4 style="border-radius : 10px; width : 100%; background-color : #3b5999; padding-top : 10px; padding-bottom : 10px; color : #ffffff;">Basic</h4>
+
+                        <h4 style="margin-top : 2px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs 10k Cr.</h4>
+                    </div>
+                    
+                    <div style="background-color : #d3d3d3; border-radius : 10px; color : #3b5999;">
+                      <p style="padding-bottom : 10px; padding-top : 20px;">IBPS SO(IT Officer) - 10 Tests</p>
+                      <p style="padding-bottom : 10px; padding-top : 10px;">Validity : 30th March 2013</p>
+                      <p style="padding-bottom : 10px; padding-top : 10px;">Package Includes 10 Test Papers</p>
+                      <p style="padding-bottom : 20px; padding-top : 10px;">Lorem ipsum lorem ipsum</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-6">
+                    <div class="tag-box tag-box-v6 box-shadow shadow-effect-2" style="text-align : center;  "> 
+                        <div class="headline">
+                        <h4 style="border-radius : 10px; width : 100%; background-color : #3b5999; padding-top : 10px; padding-bottom : 10px; color : #ffffff;">Advanced</h4>
+
+                        <h4 style="margin-top : 2px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs. 20k Cr.</h4>
+                    </div>
+                    
+                    <div style="background-color : #d3d3d3; border-radius : 10px; color : #3b5999;">
+                      <p style="padding-bottom : 10px; padding-top : 20px;">IBPS SO(IT Officer) - 10 Tests</p>
+                      <p style="padding-bottom : 10px; padding-top : 10px;">Validity : 30th March 2013</p>
+                      <p style="padding-bottom : 10px; padding-top : 10px;">Package Includes 10 Test Papers</p>
+                      <p style="padding-bottom : 20px; padding-top : 10px;">Lorem ipsum lorem ipsum</p>
+                    </div>
+                </div>  
+            </div>
+        </div><!--2nd col-->
+    </div><!--offset wrapper col-->
+</div>
+
+
+<br>
+<br>
+    
+      <div class="container">
+
+    <div class="panel-group" id="accordion1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">Is account registration required?</a>
+                </h4>
+            </div>
+            <div id="collapseOne1" class="panel-collapse collapse in">
+                <div class="panel-body" style="background-color : #8B9DC3;">
+                    Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes. 
+                    This ensures a valid communication channel for all parties involved in any transactions. 
+                    <div class="row">
+            <div class="col-md-6 portfolio-item">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div>
+                      
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+      </div>
+
+
+
+    <section id="sec">
+        
+        <h1 id="sfmt">SEARCH FOR MOCK TESTS</h1>
+        <br><br>
+        
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            
+          <select class="form-control" style=" float : left;width : 200px; margin-left : 100px; border-radius: 10px; height : 50px;">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+          </div>
+          <div class="form-group">
+            
+            <select class="form-control" style="width : 200px; margin-left : 30px; border-radius: 10px; height : 50px;">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+          </div>
+          <div class="checkbox">
+            <input type="password" class="form-control" id="pwd" style="margin-left : 30px; width : 500px; height : 50px; border-radius : 10px; " placeholder="Enter password">
+          </div>
+          <button type="submit" class="btn btn-default" style="border-radius : 10px;  margin-left : 30px; background-color : #3b5999; width : 200px; height : 50px;">Submit</button>
+        </form>
+
+
+
+    </section>
+
+
+
+    <footer class="footer" style="background-color : #3b5999;">
+          <div class="container">
+              <div class="row">
+            <div class="col-md-3 portfolio-item" style="text-align : left;">
+              <h1 style="color : #8b9dc3; font-size : 40px;" >COMPANY</h1>
+                <ul style="color : #8b9dc3; ">
+                  <li><a href="">About Us</li>
+                  <li><a href="">Careers</li>
+                  <li><a href="">Vyaktitva</li>
+                  <li><a href="">Partners</li>
+                  <li><a href="">Blog</li>
+                  <li><a href="">Media</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 portfolio-item" style="text-align : center;">
+              <h1 style="color : #8b9dc3; font-size : 40px;" >Courses</h1>
+                <ul style="color : #8b9dc3;">
+                  <li>GATE</li>
+                  <li>BANK</li>
+                  <li>AIR FORCE</li>
+                  <li>NAVY</li>
+                  <li>ARMY</li>
+                </ul>
+            </div>
+            <div class="col-md-3 portfolio-item">
+              <h1 style="color : #8b9dc3; font-size : 40px; text-align : center;" >CLOUD TAGS</h1>
+                <ul>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Pr</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Pr</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Psa</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  <button type="button" class="btn btn-primary" style="color : #8b9dc3; background-color : #dfe3ed; border-radius : 10px; margin-bottom : 10px;">Primary</button>
+                  
+                </ul>
+            </div>
+            <div class="col-md-3 portfolio-item" style="text-align : center;">
+              <h1 style="color : #8b9dc3; font-size : 40px;" >Social Media</h1>
+                <ul style="color : #8b9dc3;">
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>Linkedin</li>
+                  <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+
+          </div>
+    </footer>
+
+<style>
+    /* CSS used here will be applied after bootstrap.css */
+.jumbotron{width:80%;margin-left:10%;max-width: 1200px;margin-left:auto; margin-right:auto;}
+.img-center {margin:0 auto;}
+.dl-horizontal dt{white-space: normal;}
+.omacenter{margin-left:auto; margin-right:auto;}
+.titre{color:#fff;}
+.entete{background-color: #22780F;width:80%;margin-left:10%;}
+</style>
+
+
+
+
+  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="js/headroom.min.js"></script>
+  <script src="js/jQuery.headroom.min.js"></script>
+  <script src="js/template.js"></script>
+</body>
+</html>
