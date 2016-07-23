@@ -52,6 +52,12 @@
   <![endif]-->
 <style type="text/css">
 
+.main-sidebar{
+  
+  height: auto;  
+}
+
+
 ul#abc li a:visited{
   background-color: #000000;
 }
@@ -137,10 +143,83 @@ ul#xbx li{
 
 
 #kapil{
+  font-size: 15px;
   margin-top: 8px;
+  height: 40px;
+  width: 40px;
   margin-bottom: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
+#kapils{
+  font-size: 10px;
+  
+  height: 30px;
+  width: 30px;
+  
+  
+  
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Quicksand-Regular.otf);
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+li{
+  font-family: myFirstFont;
+}
+
+h1 h2 h3 h4 h5 h6 p{
+  font-family: myFirstFont; 
+}
+
+
+
+ul#mainnav li.active a{
+  background-color: #e9edf1;
+}
+
+
+ul#mainnav li a{
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.blue .active a,
+.blue .active a:hover {
+    background-color: #3b5999;
+}
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #3b5999;
+}
+
+.myIframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+border: solid black 1px;
+} 
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 </style>
 
@@ -186,7 +265,7 @@ ul#xbx li{
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-  <header class="main-header" style="background-color : #dfe3ed">
+  <header class="main-header" style="background-color : #ffffff">
     <!-- Logo -->
     <a href="../../index2.html" class="logo" >
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -339,120 +418,128 @@ ul#xbx li{
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="background-color : #3b5999;">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel" style="background-color : #3b5999">
+      <div class="user-panel">
         <div class="pull-left image">
           <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p style="color : #dfe3ed">Alexander Pierce</p>
-          <a href="#" style="color : #dfe3ed"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>Kapil Bhatt</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
-      
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" style="background-color : #3b5999;">
-        <li class="header"></li>
-        <li class="treeview">
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span style="color : #dfe3ed">Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i style="color : #dfe3ed"> Dashboard v1</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i style="color : #dfe3ed"> Dashboard v2</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
-            <span style="color : #dfe3ed">Layout Options</span>
+            <span>Layout Options</span>
             <span class="pull-right-container">
               <span class="label label-primary pull-right">4</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="../layout/fixed.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="../layout/collapsed-sidebar.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
-          <a href="../widgets.html">
-            <i class="fa fa-th"></i> <span style="color : #dfe3ed">Widgets</span>
+          <a href="pages/widgets.html">
+            <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
-            <span style="color : #dfe3ed">Charts</span>
+            <span>Charts</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="chartjs.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="morris.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="flot.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="inline.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-laptop"></i>
-            <span style="color : #dfe3ed">UI Elements</span>
+            <span>UI Elements</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../UI/general.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="../UI/icons.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="../UI/buttons.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="../UI/sliders.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="../UI/timeline.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="../UI/modals.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-edit"></i> <span style="color : #dfe3ed">Forms</span>
+            <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../forms/general.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="../forms/advanced.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="../forms/editors.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-table"></i> <span style="color : #dfe3ed">Tables</span>
+            <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../tables/simple.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
-          <a href="../calendar.html">
-            <i class="fa fa-calendar"></i> <span style="color : #dfe3ed">Calendar</span>
+          <a href="pages/calendar.html">
+            <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
               <small class="label pull-right bg-blue">17</small>
@@ -460,8 +547,8 @@ ul#xbx li{
           </a>
         </li>
         <li>
-          <a href="../mailbox/mailbox.html">
-            <i class="fa fa-envelope"></i> <span style="color : #dfe3ed">Mailbox</span>
+          <a href="pages/mailbox/mailbox.html">
+            <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
               <small class="label pull-right bg-green">16</small>
@@ -471,487 +558,350 @@ ul#xbx li{
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span style="color : #dfe3ed">Examples</span>
+            <i class="fa fa-folder"></i> <span>Examples</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../examples/invoice.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="../examples/profile.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="../examples/login.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="../examples/register.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="../examples/lockscreen.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="../examples/404.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="../examples/500.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="../examples/blank.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="../examples/pace.html" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-share"></i> <span style="color : #dfe3ed">Multilevel</span>
+            <i class="fa fa-share"></i> <span>Multilevel</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
             <li>
-              <a href="#"><i class="fa fa-circle-o" style="color : #dfe3ed"></i> Level One
+              <a href="#"><i class="fa fa-circle-o"></i> Level One
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
                 <li>
-                  <a href="#"><i class="fa fa-circle-o" style="color : #dfe3ed"> </i> Level Two
+                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
                   </a>
                   <ul class="treeview-menu">
-                    <li><a href="#" style="color : #dfe3ed"><i class="fa fa-circle-o" ></i> Level Three</a></li>
-                    <li><a href="#" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><a href="#" style="color : #dfe3ed"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
           </ul>
         </li>
-        <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span style="color : #dfe3ed">Documentation</span></a></li>
-        <li class="header" style="color : #dfe3ed">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span style="color : #dfe3ed">Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span style="color : #dfe3ed">Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span style="color : #dfe3ed">Information</span></a></li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li class="header">LABELS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="background-color : #FFFFFF;">
+  <div class="content-wrapper" style="background-color : #e9edf1;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Dashboard
       </br>
-        <small>Performance Analysis</small>
+        
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Charts</a></li>
         <li class="active">ChartJS</li>
       </ol>
+      <br>
+      <div class="row">
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">RANK</span>
+              <span class="info-box-number">90<small>%</small></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><img src="img/check.png" height="50px" width ="50px"></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Correct</span>
+              <span class="info-box-number">41,410</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><img src="img/uncheck.png" height="50px" width ="50px"></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Incorrect</span>
+              <span class="info-box-number">60</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Unattempted</span>
+              <span class="info-box-number">5</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+      
+        
+      </div>
+
     </section>
 
 <hr>
-
- <ul class="nav nav-tabs" >
-    <li class="active"><a data-toggle="pill" href="#home" style="margin-left : 10px;">Home</a></li>
-    <li><a data-toggle="pill" href="#menu1">Perfomance Wise</a></li>
-    <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="pill" href="#menu3">Menu 33</a></li>
+<div class="center-block">
+ <ul class="nav nav-tabs center block" id="mainnav">
+    <li class="active"><a data-toggle="pill" href="#home" style="">OVERALL PERFORMANCE</a></li>
+    <li><a data-toggle="pill" href="#menu1">SECTIONWISE PERFORMANCE</a></li>
+    
+    <li><a data-toggle="pill" href="#menu3">TOPICWISE PERFORMANCE</a></li>
+    <li><a data-toggle="pill" href="#menu4">SOLUTIONS</a></li>
+    
   </ul>
-  
+  </div>
   
 
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <section class="content">
-
-      <div class="row">
-        <div class="col-md-6">
-          <!-- AREA CHART -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Area Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="areaChart" style="height:250px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- DONUT CHART -->
-          <div class="box box-danger">
-            <div class="box-header with-border">
-              <h3 class="box-title">Donut Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <canvas id="pieChart" style="height:250px"></canvas>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-        </div>
-        <!-- /.col (LEFT) -->
-        <div class="col-md-6">
-          <!-- LINE CHART -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Line Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="lineChart" style="height:250px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- BAR CHART -->
-          <div class="box box-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Bar Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="barChart" style="height:230px"></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-        </div>
-        <!-- /.col (RIGHT) -->
-      </div>
-      <!-- /.row -->
-
+      <br>
     
-
-      </section>
+      <div class="myIframe">
+    <iframe src="AdminLTE-master/pages/charts/home1.html" width ="100%" height ="100%" style="border : none;"></iframe>
+  </div>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <iframe src="AdminLTE-master/pages/charts/morris1.html" width ="100%" height ="900px" style="border : none;"></iframe>
+
+      <br>
+      <br>
+            <div class="container" >
+               <iframe style="width : 100%; border : none;" height="430px" src="AdminLTE-master/pages/charts/chartsjs1.html"></iframe>
+             
+            
+  
+    <ul class="nav nav-pills  center-block">
+    <li class="active"><a data-toggle="pill" href="#homex" style="">Sectiom A</a></li>
+    <li><a data-toggle="pill" href="#menu1x">SECTION B</a></li>
+    <li><a data-toggle="pill" href="#menu2x">SECTION C</a></li>
+    <li><a data-toggle="pill" href="#menu3x">SECTION D</a></li>
+    
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="homex" class="tab-pane fade in active">
+        <div class="container">
+        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+      </div>
     </div>
-    <div id="menu2" class="tab-pane fade">
-      <iframe src="AdminLTE-master/pages/charts/morris1.html" width ="100%" height ="1100px" style="border : none;"></iframe>
+    <div id="menu1x" class="tab-pane fade">
+        <div class="container">
+        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+      </div>
+    </div>
+    <div id="menu2x" class="tab-pane fade">
+        <div class="container">
+        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+      </div>
+    </div>
+    <div id="menu3x" class="tab-pane fade">
+        <div class="container">
+        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     
-    <div id="menu3" class="tab-pane fade">
+      
+
+
+      <div id="menu3" class="tab-pane fade">
         <br>
+        <br>
+        <iframe style="width : 100%; border : none;" height="500px" src="AdminLTE-master/pages/charts/thirdSecond.html"></iframe>            
 
-        <ul class="nav nav-tabs" >
-    <li class="active"><a data-toggle="pill" href="#" style="margin-left : 10px;">Home</a></li>
-    <li><a data-toggle="pill" href="#">Perfomance Wise</a></li>
-    <li><a data-toggle="pill" href="#">Menu 2</a></li>
-    <li><a data-toggle="pill" href="#">Menu 33</a></li>
+      </div>
+
+
+
+
+
+    
+    <div id="menu4" class="tab-pane fade">
+        <br>
+      <div class="container">  
+        <ul class="nav nav-pills blue" id="activeunder">
+    <li class="active"><a data-toggle="pill" href="#" style="">General Intelligence and Reasoning</a></li>
+    <li><a data-toggle="pill" href="#">General Awareness</a></li>
+    <li><a data-toggle="pill" href="#">Quantitative Aptitude</a></li>
+    <li><a data-toggle="pill" href="#">Logical Reasoning</a></li>
+    <li><a data-toggle="pill" href="#">English Comprehension</a></li>
   </ul> 
-
+      </div>
   <br>
-      <div class="container">
+    <div class="container">
+      <div class="row" >
         <div class="col-md-8">
-          <div class="row" style="border-radius: 10px; border: 0px solid #000000; background-color : #ffffff;">
+          <div class="row" style="margin-left : 10px; margin-right : 10px;" >
             <div class="well well-lg">
-                <p id="pques">Q.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Q.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               </div>
           </div>
-  
-      <div class="well well-sm">
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">&emsp;1 &emsp; ask kjb kjb kbk jb kb kjb kb kjb k</a>      
+        <br>
+      <div class="row" style="margin-left : 10px;margin-right : 10px;">
+        <button  type="button" class="btn btn-default btn-lg btn-block" style="text-align : left; background-color : #f3f3f3f3" ><a href="#aboutModal" id="kapils" style="background-color : #f3f3f3"  data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a><span style="font-size : 15px; padding-left :20px;">  Lorem ipsipsum ipsum ipsum ipsum ipsum </span></button>
       </div>
       <br>
-      <div class="well well-sm">
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">&emsp;1 &emsp; ask kjb kjb kbk jb kb kjb kb kjb k</a>      
+      <div class="row" style="margin-left : 10px;margin-right : 10px;">
+        <button  type="button" class="btn btn-default btn-lg btn-block" style="text-align : left; background-color : #dd4b39" ><a href="#aboutModal" id="kapils" style="background-color : #f3f3f3"  data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a><span style="font-size : 15px; padding-left :20px;">  Lorem ipm ipsum ipsum ipsum ipsum ipsum </span></button>
       </div>
       <br>
-      <div class="well well-sm">
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">&emsp;1 &emsp; ask kjb kjb kbk jb kb kjb kb kjb k</a>      
+      <div class="row" style="margin-left : 10px;margin-right : 10px;">
+        <button  type="button" class="btn btn-default btn-lg btn-block" style="text-align : left; background-color : #00a65a" ><a href="#aboutModal" id="kapils" style="background-color : #f3f3f3"  data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a><span style="font-size : 15px; padding-left :20px;">  Lorem ips ipsum isum ipsum ipsum ipsum </span></button>
       </div>
       <br>
-      <div class="well well-sm">
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">&emsp;1 &emsp; ask kjb kjb kbk jb kb kjb kb kjb k</a>      
+      <div class="row" style="margin-left : 10px;margin-right : 10px;">
+        <button  type="button" class="btn btn-default btn-lg btn-block" style="text-align : left; background-color : #f3f3f3f3" ><a href="#aboutModal" id="kapils" style="background-color : #f3f3f3"  data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a><span style="font-size : 15px; padding-left :20px;">  Lorem ipspsum isum ipsum ipsum ipsum ipsum </span></button>
       </div>
+
       <br>
       
 </div>
 
+  
+    
     <div class="col-md-4">
         <ul id="abc">
+
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39"  data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>      
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>      
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">12</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">13</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" d ata-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">12</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1s</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #dd4b39" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">21</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">41</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">12</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #f3f3f3"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">11</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
       <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>      
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>      
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
-      <li><a href="#aboutModal" id="kapil" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #f3f3f3"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">12</span></a></li>
+      <li><a href="#aboutModal" id="kapil"style="background-color : #00a65a" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">21</span></a></li>
+      <li><a href="#aboutModal" id="kapil"style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #f3f3f3"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">12</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil"style="background-color : #00a65a" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #f3f3f3"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #00a65a"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil"style="background-color : #00a65a" data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
+      <li><a href="#aboutModal" id="kapil" style="background-color : #f3f3f3"data-toggle="modal" data-target="#myModal" class="btn btn-circle btn-default">1</span></a></li>
       </ul>
 
     </div>
+  </div>
+  <br>
+    <div class="row">
+
+      <div class="col-md-8 center-block">      
+        <button class="btn btn-default" value="left" type="button" style=" background-color : #3b5999; color : #ffffff;"><span class="glyphicon glyphicon-arrow-left"></span> Previous Question</button>
+          <button class="btn btn-default" value="right" type="button" style=" background-color : #3b5999; color : #ffffff;" >Next Questions <span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+
+    </div>
+    <div class="container">
+        <hr style="display: block; height: 1px; border: 0; border-top: 1px solid #ccc;    margin: 1em 0;    padding: 0; ">
+    </div>    
+    <br>
+
+    <div class="row">
+        <iframe src="AdminLTE-master/pages/charts/belowSolution.html" width ="99%" height ="350px" style="border : none;"></iframe>     
+    </div>
+
+
         </div>
       </div>
-    </div>
+    </div> <!-- TAb content -->
   </div>   <!-- Main content -->
-    <section class="content" id="secForHome"></section>
+    
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    
-    
-  </footer>
-
+  
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-user bg-yellow"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-
-                <p>New phone +1(800)555-1234</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-
-                <p>nora@example.com</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                <p>Execution time 5 seconds</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="label label-danger pull-right">70%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Update Resume
-                <span class="label label-success pull-right">95%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Laravel Integration
-                <span class="label label-warning pull-right">50%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Back End Framework
-                <span class="label label-primary pull-right">68%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Allow mail redirect
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Other sets of options are available
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Expose author name in posts
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Allow the user to show his name in blog posts
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Show me as online
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Turn off notifications
-              <input type="checkbox" class="pull-right">
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Delete chat history
-              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-            </label>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
+  
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
+  
 </div>
 <!-- ./wrapper -->
 
@@ -969,6 +919,9 @@ ul#xbx li{
 <script src="js/demo.js"></script>
 <!-- page script -->
 <script>
+
+
+
 
   $(function () {
     /* ChartJS
