@@ -221,6 +221,22 @@ width: 100%;
 height: 100%;
 }
 
+aside a{
+  color: #ffffff;
+}
+
+aside a:hover,
+aside a:visited{
+  border-bottom: none;
+  border: inherit;
+  color: inherit;
+}
+
+      /* unvisited link */
+aside a:visited {color:#ffffff;}  /* visited link */
+aside a*:hover {color:#ffffff;}  /* mouse over link */
+aside a*:active {color:#ffffff;}  /* selected link */
+
 </style>
 
 
@@ -418,7 +434,7 @@ height: 100%;
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar" style="background-color : #3b5999;">
+  <aside class="main-sidebar" style="background-color : #3b5999; color : #ffffff;">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -428,24 +444,16 @@ height: 100%;
         </div>
         <div class="pull-left info">
           <p>Kapil Bhatt</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#" style="color : #ffffff;"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
+      
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -619,7 +627,7 @@ height: 100%;
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="background-color : #e9edf1;">
+  <div class="content-wrapper" style="background-color : #e9edf1; ">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -725,7 +733,7 @@ height: 100%;
       <br>
       <br>
             <div class="container" >
-               <iframe style="width : 100%; border : none;" height="430px" src="AdminLTE-master/pages/charts/chartsjs1.html"></iframe>
+               <iframe style="width : 100%; border : none;" height="660px" src="AdminLTE-master/pages/charts/chartsjs1.html"></iframe>
              
             
   
@@ -740,22 +748,22 @@ height: 100%;
   <div class="tab-content">
     <div id="homex" class="tab-pane fade in active">
         <div class="container">
-        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+        <iframe style="width : 100%; border : none;" height="660px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
       </div>
     </div>
     <div id="menu1x" class="tab-pane fade">
         <div class="container">
-        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+        <iframe style="width : 100%; border : none;" height="660px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
       </div>
     </div>
     <div id="menu2x" class="tab-pane fade">
         <div class="container">
-        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+        <iframe style="width : 100%; border : none;" height="660px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
       </div>
     </div>
     <div id="menu3x" class="tab-pane fade">
         <div class="container">
-        <iframe style="width : 100%; border : none;" height="380px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
+        <iframe style="width : 100%; border : none;" height="660px" src="AdminLTE-master/pages/charts/chartsjs2.html"></iframe>
       </div>
     </div>
   </div>
@@ -883,7 +891,7 @@ height: 100%;
     <br>
 
     <div class="row">
-        <iframe src="AdminLTE-master/pages/charts/belowSolution.html" width ="99%" height ="350px" style="border : none;"></iframe>     
+        <iframe src="AdminLTE-master/pages/charts/belowSolution.html" width ="99%" height ="460px" style="border : none;"></iframe>     
     </div>
 
 
