@@ -327,6 +327,7 @@ ul#inln3 li img{
 
 a:visited{
   color: inherit;
+  text-decoration: none;
 }
 
 a#head:hover{
@@ -394,6 +395,20 @@ ul#soc li a i{
     .bullet-right{
        float:right!important;
     }
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
 }
 
 img:hover{
@@ -559,7 +574,52 @@ a h1 h2 h3 h4 h5 h6 p {
 <div class="container">
     
 
-    <br />
+    <br>
+
+    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
 
     <div class="panel-group" id="accordion">
         
@@ -688,7 +748,7 @@ a h1 h2 h3 h4 h5 h6 p {
                         <div class="headline">
                         <h4 style="border-radius : 10px; width : 100%; background-color : #3b5999; padding-top : 10px; padding-bottom : 10px; color : #ffffff;">Basic</h4>
 
-                        <h4 style="margin-top : 2px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs 10k Cr.</h4>
+                        <h4 style="margin-top : 5px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs 10k Cr.</h4>
                     </div>
                     
                     <div style="background-color : #d3d3d3; border-radius : 10px; color : #3b5999;">
@@ -704,7 +764,7 @@ a h1 h2 h3 h4 h5 h6 p {
                         <div class="headline">
                         <h4 style="border-radius : 10px; width : 100%; background-color : #3b5999; padding-top : 10px; padding-bottom : 10px; color : #ffffff;">Advanced</h4>
 
-                        <h4 style="margin-top : 2px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs. 20k Cr.</h4>
+                        <h4 style="margin-top : 5px; border-radius : 10px; width : 100%; background-color : #8B9DC3; padding-top : 10px; color : #3B5999; padding-bottom : 10px; margin-bottom : 5px;">Rs. 20k Cr.</h4>
                     </div>
                     
                     <div style="background-color : #d3d3d3; border-radius : 10px; color : #3b5999;">
@@ -901,8 +961,9 @@ a h1 h2 h3 h4 h5 h6 p {
     .panel-heading [data-toggle="collapse"]:after {
         font-family: 'Glyphicons Halflings';
         content: "\e072"; /* "play" icon */
-        float: right;
-        color: #F58723;
+        float: left;
+        margin-right: 10px;
+        color: #3B5999;
         font-size: 18px;
         line-height: 22px;
         /* rotate "play" icon from > (right arrow) to down arrow */
@@ -920,7 +981,7 @@ a h1 h2 h3 h4 h5 h6 p {
         -ms-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
-        color: #454444;
+        color: #3B5999;
     }
 </style>
 
