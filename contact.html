@@ -38,18 +38,6 @@
 
 <style type="text/css">
 
-.row.vdivide [class*='col-']:not(:last-child):after {
-  background: #ffffff;
-  width: 1px;
-  content: "";
-  display:block;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right: 0;
-  min-height: 70px;
-}
-
 html, body {
   width: auto !important;
   overflow-x: hidden !important;
@@ -478,7 +466,7 @@ a#head:hover{
 
           
           <div class= "container" style=" background-color : #DFE3ED;">
-            <hr style="border-color : #f3f3f3;">
+            <hr>
             <ul align="middle">
                   <li style="display:inline; padding-left : 10px;"><a href=""><img class = "img-circle" src="img/fb.png" height="50px" width="50px"></a></li>
                   <li style="display:inline; padding-left : 10px;"><a href=""><img class = "img-circle" src="img/yt.png" height="50px" width="50px"></a></li>
@@ -489,7 +477,7 @@ a#head:hover{
                   <li style="display:inline; padding-left : 10px;"><a href=""><img class = "img-circle" src="img/ld.png" height="50px" width="50px"></a></li>
                 </ul>
 
-                <hr style="border-color : #f3f3f3;">
+                <hr>
 
           <br>
 <br>
@@ -514,14 +502,14 @@ a#head:hover{
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         
-                                        <input  type="text" name="name"  placeholder="Please enter your firstname *" required="required" style="width : 100%; border-radius : 10px;  color : #ffffff; border : none;" data-error="Firstname is required.">
+                                        <input  type="text" name="name"  placeholder="Please enter your firstname *" required="required" style="width : 100%; border-radius : 10px;  color : #ffffff;" data-error="Firstname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         
-                                        <input id="form_lastname" type="text" name="surname"  placeholder="Please enter your lastname *" required="required" style=" border-radius : 10px;width : 100%; color : #ffffff ; border : none;" data-error="Lastname is required.">
+                                        <input id="form_lastname" type="text" name="surname"  placeholder="Please enter your lastname *" required="required" style=" border-radius : 10px;width : 100%; color : #ffffff;" data-error="Lastname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -530,13 +518,13 @@ a#head:hover{
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         
-                                        <input id="form_email" type="email" name="email"  placeholder="Please enter your email *" required="required" data-error="Valid email is required." style=" color : #ffffff ;  border-radius : 10px; border : none; width : 100%;">
+                                        <input id="form_email" type="email" name="email"  placeholder="Please enter your email *" required="required" data-error="Valid email is required." style=" color : #ffffff; border-radius : 10px;width : 100%;">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="form_phone" type="email" name="email"  placeholder="Please enter your contact number *" required="required" data-error="Valid email is required." style="border-radius : 10px;width : 100%; color : #ffffff; border : none;" >
+                                        <input id="form_phone" type="email" name="email"  placeholder="Please enter your contact number *" required="required" data-error="Valid email is required." style="border-radius : 10px;width : 100%; color : #ffffff;">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -544,7 +532,7 @@ a#head:hover{
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea id="form_message" name="message" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."  style=" width : 100%; color : #ffffff; border-radius : 10px; border : none;" ></textarea>
+                                        <textarea id="form_message" name="message" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."  style=" width : 100%; color : #ffffff; border-radius : 10px;"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
