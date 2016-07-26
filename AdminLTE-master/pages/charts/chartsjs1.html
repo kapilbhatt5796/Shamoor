@@ -11,6 +11,12 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
@@ -25,7 +31,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <style>
+    <style>
 
     @font-face {
     font-family: myFirstFont;
@@ -94,37 +100,17 @@ h1 h2 h3 h4 h5 h6 p{
 </style>
 
 
+
 </head>
-<body class="hold-transition skin-blue sidebar-mini" style="background-color: #e9edf1;">
 
-
-  <!-- Left side column. contains the logo and sidebar -->
-  
-
-  <!-- Content Wrapper. Contains page content -->
-
-    <!-- Content Header (Page header) -->
+<body class="hold-transition skin-blue sidebar-mini">
 
     <!-- Main content -->
     <section class="content">
-      
-      <div class="row">
-        <div class="col-md-12 center-block">
-
-          <h1 style="text-align : center;">Dummy Text Here</h1>
-          <br><br>
-
-        </div>
-
-      </div>
-
-
-
       <div class="row">
         <div class="col-md-6">
           <!-- AREA CHART -->
-
-                          <div class="box box-success"  id="topcolor">
+          <div class="box box-success"  id="topcolor">
                   <div class="box-header with-border">
               <h3 class="box-title">Accuracy</h3>
 
@@ -174,30 +160,8 @@ h1 h2 h3 h4 h5 h6 p{
                   </div>
                   <br>
                 </div>
-  
-
-          <div class="box box-success" style="display : none;">
+          <div class="box box-primary" style="display : none;">
             <div class="box-header with-border">
-              <h3 class="box-title">Bar Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <div class="chart">
-                <canvas id="barChart" ></canvas>
-              </div>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-          <!-- DONUT CHART -->
-          <div class="box box-primary" style="display: none;">
-            <div class="box-header with-border" >
               <h3 class="box-title">Area Chart</h3>
 
               <div class="box-tools pull-right">
@@ -208,14 +172,29 @@ h1 h2 h3 h4 h5 h6 p{
             </div>
             <div class="box-body">
               <div class="chart">
-                <canvas id="areaChartx" style="height:250px"></canvas>
+                <canvas id="areaChart" style="height:250px"></canvas>
               </div>
             </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
-          
 
+          <!-- DONUT CHART -->
+          <div class="box box-danger" style="width:725px; display : none;">
+            <div class="box-header with-border">
+              <h3 class="box-title">Donut Chart</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body">
+              <canvas id="pieChart" style="height:250px"></canvas>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
 
         </div>
         <!-- /.col (LEFT) -->
@@ -241,34 +220,23 @@ h1 h2 h3 h4 h5 h6 p{
           <!-- /.box -->
 
           <!-- BAR CHART -->
-          <div class="box box-danger" id="topcolor">
+          <div class="box box-success" id="topcolor">
             <div class="box-header with-border">
-              <h3 class="box-title">Percentile vs marks</h3>
+              <h3 class="box-title">Bar Chart</h3>
+
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            <div class="box-body" >
-              <canvas id="pieChart" ></canvas>
-              <br>
-              <br>
-              <ul id="menu" class="center-block">
-                  <li style="font-size : 20px; padding : 0px 10px 0px 0px;">Maths</li>
-                  <li style="font-size : 20px; padding : 0px 10px 0px 20px;">Science</li>
-                  <li style="font-size : 20px; padding : 0px 10px 0px 20px;">Physics</li>
-                  <li style="font-size : 20px; padding : 0px 10px 0px 20px;">Chemistry</li>  
-      
-                  
-           </ul>
-
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="barChart" style="height:230px"></canvas>
+              </div>
             </div>
             <!-- /.box-body -->
           </div>
-            
-
-          
           <!-- /.box -->
 
         </div>
@@ -278,16 +246,14 @@ h1 h2 h3 h4 h5 h6 p{
 
     </section>
     <!-- /.content -->
-
+  
   <!-- /.content-wrapper -->
-  
+
   <!-- Control Sidebar -->
-  
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
-
-
+  
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
@@ -315,32 +281,32 @@ h1 h2 h3 h4 h5 h6 p{
     //--------------
 
     // Get context with jQuery - using jQuery's .get() method.
-    var areaChartCanvas = $("#areaChartx").get(0).getContext("2d");
+    var areaChartCanvas = $("#areaChart").get(0).getContext("2d");
     // This will get the first returned node in the jQuery collection.
     var areaChart = new Chart(areaChartCanvas);
 
     var areaChartData = {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5", "Test 6", "Test 7", "Test 8"],
       datasets: [
         {
-          label: "Electronics",
+          label: "Marks",
           fillColor: "rgba(210, 214, 222, 1)",
           strokeColor: "rgba(210, 214, 222, 1)",
           pointColor: "rgba(210, 214, 222, 1)",
           pointStrokeColor: "#c1c7d1",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(220,220,220,1)",
-          data: [65, 59, 80, 81, 56, 55, 40]
+          data: [65, 59, 80, 81, 56, 55, 40, 40]
         },
         {
-          label: "Digital Goods",
+          label: "Percentile",
           fillColor: "rgba(60,141,188,0.9)",
           strokeColor: "rgba(60,141,188,0.8)",
           pointColor: "#3b8bba",
           pointStrokeColor: "rgba(60,141,188,1)",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(60,141,188,1)",
-          data: [28, 48, 40, 19, 86, 27, 90]
+          data: [28, 48, 40, 19, 86, 27, 90, 100]
         }
       ]
     };
@@ -474,9 +440,9 @@ h1 h2 h3 h4 h5 h6 p{
     var barChartCanvas = $("#barChart").get(0).getContext("2d");
     var barChart = new Chart(barChartCanvas);
     var barChartData = areaChartData;
-    barChartData.datasets[1].fillColor = "#00a65a";
-    barChartData.datasets[1].strokeColor = "#00a65a";
-    barChartData.datasets[1].pointColor = "#00a65a";
+    barChartData.datasets[1].fillColor = "#3b5999";
+    barChartData.datasets[1].strokeColor = "#3b5999";
+    barChartData.datasets[1].pointColor = "#3b5999";
     var barChartOptions = {
       //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
       scaleBeginAtZero: true,
