@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <title>Bootstrap FAQ Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
   
   <meta name="description" content="">
   <meta name="author"      content="">
@@ -185,11 +194,7 @@ li#menub1{
 
 @font-face {
     font-family: myFirstFont;
-    src: url("font-awesome/fonts/Quicksand-Regular.otf");
-}
-
-a{
-  font-family: myFirstFont;
+    src: url(font/Quicksand-Regular.otf);
 }
 
 div {
@@ -322,6 +327,7 @@ ul#inln3 li img{
 
 a:visited{
   color: inherit;
+  text-decoration: none;
 }
 
 a#head:hover{
@@ -391,6 +397,20 @@ ul#soc li a i{
     }
 }
 
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
 img:hover{
   border: none;
 }
@@ -399,9 +419,26 @@ a#head:hover{
   border-bottom: 2px solid #3b5999;
 }
 
-ul#imga {
-    list-style-image: url('img/bullet.png');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Quicksand-Regular.otf);
 }
+
+div{
+  font-family: myFirstFont;
+}
+
+
+#mainnav{
+  float: center;
+}
+
+html *{
+  font-family: myFirstFont;
+}
+
+
 
 #banner{
   width: 100%;
@@ -409,23 +446,23 @@ ul#imga {
   
 }
 
-#bannerimg{
-  
-}
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
 
-span{
-  font-family: myFirstFamily;
+#navpills li a:focus{
+  background-color: #3b5999;
 }
 
 </style>
 
 
 
+
 </head>
 
-<body class="page-home" style="background-color : #ffffff;" >
-
-
+<body>
 
 
   <div class= "navbar navbar-dual navbar-inverse navbar-fixed-top headroom ontop-now" style="background-color : #ffffff;">
@@ -449,17 +486,17 @@ span{
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="index.html" style="color : #8b9dc3" id="head">Home</a></li>
           <li class="dropdown">
-            <a href="packages.html" class="dropdown-toggle" data-hover="dropdown"  data-toggle="dropdown" style="color : #8b9dc3">Tets Packages <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-hover="dropdown"  data-toggle="dropdown" style="color : #8b9dc3">Tets Packages <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">IBPS SO(IT Officer)</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">IBPS SO(Marketing Officer)</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">Railway RRB</a></li>
-              <li><a href="TermsPage/terms.html" style="color : #8b9dc3">View all packages</a></li>
+              <li><a href="services.html" style="color : #8b9dc3">A</a></li>
+              <li><a href="UI/index.html" style="color : #8b9dc3">B</a></li>
+              <li><a href="portfolio-item.html" style="color : #8b9dc3">C</a></li>
+              <li><a href="blog.html" style="color : #8b9dc3">D</a></li>
+              <li><a href="single.html" style="color : #8b9dc3">E</a></li>
+              <li><a href="about.html" style="color : #8b9dc3">F</a></li>
+              <li><a href="sidebar-left.html" style="color : #8b9dc3">G</a></li>
+              <li><a href="sidebar-right.html" style="color : #8b9dc3">H</a></li>
+              <li><a href="contact.html" style="color : #8b9dc3">I</a></li>
             </ul>
           </li>
           <li><a href="blog.html" id="head" style="color : #8b9dc3">BLOG</a></li>
@@ -474,11 +511,8 @@ span{
 
 
 
-
-
-
-  <!-- header -->
-  <div class="container" id="banner">
+    <div class="container" id="banner">
+    
     <div class="row">
 
       <img src="img/banner.jpg" id="bannerimg" class="img-responsive">
@@ -486,59 +520,157 @@ span{
     </div>
 
   </div>
-  <!-- /.carousel -->
-  <!-- end of header -->
 
-  <!-- intro -->
-  <section class="section section-intro" style="background-color : #FFFFFF">
-    <div class="container">
-      <div class="row topspace-2x">
-        <figure class="col-md-3 col-sm-6 bottomspace-xs text-center">
-          <i ><img src="images/circle.png" style="height : 90px; width : 90px;"></i>
-          <h4>Bootstrap-powered</h4>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
-        </figure>
-        <figure class="col-md-3 col-sm-6 bottomspace-xs text-center">
-          <i ><img src="images/circle.png" style="height : 90px; width : 90px;"></i>
-          <h4>Fat-free</h4>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
-        </figure>
-        <figure class="col-md-3 col-sm-6 bottomspace-xs text-center">
-          <i ><img src="images/circle.png" style="height : 90px; width : 90px;"></i>
-          <h4>Creative Commons</h4>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
-        </figure>
-        <figure class="col-md-3 col-sm-6 bottomspace-xs text-center">
-          <i ><img src="images/circle.png" style="height : 90px; width : 90px;"></i>
-          <h4>Author's support</h4>
-          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
-        </figure>
-      </div>
-    </div>
-  </section>
-  <!-- end of intro-->
-
-  <!-- highlights - jumbotron -->
+ <!-- Bootstrap FAQ - START -->
 
 
+  <br>
+  <br>
+  <br>
 
-<hr>
-
-
-<div class="container" style="padding-top : 10px;">
-  <div class="row center-block" style="float : center; text-align : center;">
-          <img class="img-valign" style = "" src="img/arrowl.png" alt="" height="50px" width="50px">
-        <span style="font-size : 20px; color : #3b5999;">TEST PACKAGES</span>
-        <img class="img-valign" style = "" src="img/arrowr.png" alt="" height="50px" width="50px">
-        </div>
-          
-        <div class="row center-block" style="float : center; text-align : center;">
-          
-        </div>
-    
-    <br>
+  <div class="container">
 
   <div class="row">
+  <h1 style="color: #3b5999;  text-align: center; font-size: 22px; margin-bottom: 40px; ">TEST PACKAGES</h1>
+</div>
+
+  </div>
+
+
+
+
+  <div class="container">
+      <div class="row">
+  <div class="span12 centered-pills">
+    <ul class="nav nav-pills" >
+      <li class="active"><a data-toggle="pill" href="#home1" href="#" style="">Banking</a></li>
+      <li class="" ><a data-toggle="pill" href="#home2" href="#" style="">MBA</a></li>
+      <li class=""><a data-toggle="pill" href="#home3" href="#" style="">Government and Insurance Exams</a></li>
+      
+    </ul>
+  </div>
+</div>
+  </div>
+
+<br>
+<br>
+
+ <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+        
+        <div class="container">
+          <div class="row">
+
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+                  <br>
+                  <h1 style="text-align : center; font-size : 20px;  color : #3b5999; padding-bottom : 10px;">BANKING</h1>
+                  <img class="center-block" style = " margin-bottom : 20px; float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/bank.png" alt="" height="173px" width="173px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> IBSE CLERK</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> IBSE PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> RBI GRADE</a>
+                    </div>
+                  </div>
+                  
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> SBI PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> IBPS PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> NABARD</a>
+                    </div>
+                  </div>
+                                    
+    </div>
+    </div>
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+                <br>
+                 <h1 style="text-align : center; font-size : 20px; color : #3b5999; padding-bottom : 10px;">MBA</h1>
+                  <img class="img-responsive center-block" style = " float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/manager.png" alt="" height="150px" width="150px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> CAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> CMAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> XAT </a>
+                    </div>
+                  </div>
+                  
+                    <div class="row" style=" margin-bottom : 20px; color : #3b5999;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> MHCET </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> NMAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <span><a href=""> SNAP </a>
+                    </div>
+                  </div>
+                                    
+
+      </div></div>
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+<br>
+                  <h1 style="text-align : center; font-size : 20px; color : #3b5999; padding-bottom : 10px;">Government and Insurance Exams</h1>
+                  <img class="img-responsive center-block" style = " float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/govt.png" alt="" height="150px" width="150px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;  ">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-6" style="text-align : center;">
+                      <span><a href=""> SSC CGL </a>
+                    </div>
+                    <div class="col-md-6" style="text-align : center;">
+                      <span><a href=""> LIC AAQ </a>
+                    </div>
+                  </div>
+                  
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-6" style="text-align : center;">
+                      <span><a href=""> UIIC AQ</a>
+                    </div>
+                    <div class="col-md-6" style="text-align : center;">
+                      <span><a href=""> RAILWAYS RRB</a>
+                    </div>
+                    
+                  </div>
+                                    
+
+    </div></div>
+  
+          </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <div id="home2" class="tab-pane fade">
+        
+      <div class="container">
+      <div class="row">
+          
     <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
                   <br>
                   <h1 style="text-align : center; font-size : 20px;  color : #3b5999; padding-bottom : 10px;">BANKING</h1>
@@ -630,173 +762,139 @@ span{
                                     
 
     </div></div>
-  </div>
-</div>
-
-
-
-<hr>
-
-    <div class="container" style="padding-top : 100px; padding-bottom : 100px;">
-        <!-- /.row -->
-
-
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item" style = "padding-bottom : 40px">
-                <h3 style="text-align: center; font-size : 20px; color : #8b9dc3;">
-                    Recent News / Read the blog
-                </h3>
-                <br>
-                <ul>
-                  <li style="padding-bottom : 10px; ">
-                    <a href="#">
-                      <img class="img-responsive" style = "border-radius : 10px;"src="http://placehold.it/700x210" alt="">
-                    </a>
-                  </li>
-                  <li style="padding-bottom : 10px;">
-                    <a href="#">
-                      <img class="img-responsive" style = "border-radius : 10px;"src="http://placehold.it/700x210" alt="">
-                    </a>
-                  </li>
-                  <li style="padding-bottom : 10px;">
-                    <a href="#">
-                      <img class="img-responsive" style = "border-radius : 10px;"src="http://placehold.it/700x210" alt="">
-                    </a>
-                  </li>
-
-                </ul>
-                
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <h3 style="text-align: center; font-size : 20px; color : #8b9dc3">
-                    Recent News / Read the blog
-                </h3>
-                <br>
-                <div class="center-block" >
-                  <div class="embed-responsive embed-responsive-16by9">
-                      <iframe style="border-radius : 10px;" class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-                  </div>
-                </div>  
-            </div>
-            <div class="col-md-4 portfolio-item" >
-                <h3 style="text-align: center; font-size : 20px;  color : #8b9dc3">
-                    Recent News / Read the blog
-                </h3>
-                <br>
-                <div class="center-block" style=" height : 350px; background-color : #dfe3ed">
-                    <br>
-                    <h3 style="color : #3b5999; text-align : center;"><b>DUMMY TEXT</b></h3>
-                    <br>
-                    <br>
-                    <p style="color : #f3f3f3; color : #3b5999;  text-align : center; padding : 0px 40px 0px 40px;">as das djlka s d alsdals dsak dasl dlkasj dlasj dlkas ld salkd askldj aslkd lask dlaks dklaj dl asdl asld asd alksd alskd j</p>
-                    <br>
-                    <br>
-
-                      <button type="button" class="btn btn-primary center-block" style="color : #ffffff; background-color : #3b5999; border-radius : 10px; margin-bottom : 10px; border : none; float : center;">Primary</button>
-                </div>
-                
-                
-            </div>
-        </div>
-        
-    </div>
-
-
-
-
-<div style="padding-bottom : 40px; background-color : #dfe3ed; padding-top : 40px;">
-<div class="row center-block" style="float : center; text-align : center;">
-          <img class="img-valign" style = "" src="img/arrowl.png" alt="" height="50px" width="50px">
-        <span style="font-size : 25px; color : #3b5999;">WHAT STUDENTS SAY</span>
-        <img class="img-valign" style = "" src="img/arrowr.png" alt="" height="50px" width="50px">
-        </div>
-
-
-<div class="container">
   
-  <div class="row">
-    <div class="col-md-2" >
-      <img src="img/quote.png">
-    </div>
-    <div class="col-md-8" style="margin-top : 80px ">
-        <p>Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem Lorem ipsum lorem </p>
-    </div>
-    <div class="col-md-2" style="margin-top : 80px;">
-        <img src="images/1.jpg" class="img-circle" height ="125px" width="125px">
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-<div class="container" style="margin-top : 50px;">
-  <div class="col-md-12">
-    <h1 style="color : #8b9dc3; font-size : 30px; text-align : center;"><b>CHECK OUT SOME RECENT LESSONS<b></h1>
-    <p style="color : #8b9dc3; font-size : 20px; text-align : center;">Tell us wad wdasx sad kasd laksd</p>
-  </div>
-</div>
-
-
-
-
-
-<div class="container" style="margin-top : 50px;">
-  
-  <div class="row">
-    <div class="col-lg-4" style="margin : 20px 0px 20px 0px;"><div><img class="img-valign" style = "margin-left : 10px;  border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/sbi.png" alt="" height="80px" width="60px">
-    <span style="font-size : 30px; margin-left : 10px; color : #3b5999;">SBI PO MAINS</span></div></div>
-    <div class="col-lg-4" style="margin : 20px 0px 20px 0px;"><div><img class="img-valign" style = "margin-left : 10px;  border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/sbi.png" alt="" height="80px" width="60px">
-    <span style="font-size : 30px; margin-left : 10px; color : #3b5999;">SBI PO MAINS</span></div></div>
-    <div class="col-lg-4" style="margin : 20px 0px 20px 0px;"><div><img class="img-valign" style = "margin-left : 10px;  border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/sbi.png" alt="" height="80px" width="60px">
-    <span style="font-size : 30px; margin-left : 10px; color : #3b5999;">SBI PO MAINS</span></div></div>
-  </div>
-</div>
-
-<hr>
-      
-      <div style=" margin-bottom  : 50px; margin-top : 10px; padding : 20px 0px 20px 0px;">
-        <div class="container" style="margin-top : 10px; margin-bottom 50px;">
-          <div class="row center-block">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1 " style="margin : 10px 0px 10px 0px;" >
-             <img class="center-block" src="img/fb.png" height="50px" width="50px">
-          </div>
-          <div class="col-md-1" style="margin : 10px 0px 10px 0px;">
-             <img class="center-block" src="img/tw.png" height="50px" width="50px">
-          </div>
-          <div class="col-md-1" style="margin : 10px 0px 10px 0px;">
-             <img src="img/yt.png" class="center-block" height="50px" width="50px">
-          </div>
-          <div class="col-md-1" style="margin : 10px 0px 10px 0px;">
-             <img src="img/ld.png" height="50px" class="center-block" width="50px">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-1">
-          </div>
-          </div>
-        </div>
       </div>
+          
+        </div>
+
+
+
+
+
+
+    </div>
+  
+
+
+  <div id="home3" class="tab-pane fade">
+  
+        
+    <div class="container">
+    <div class="row">
+
+
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+                  <br>
+                  <h1 style="text-align : center; font-size : 20px;  color : #3b5999; padding-bottom : 10px;">BANKING</h1>
+                  <img class="center-block" style = " margin-bottom : 20px; float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/bank.png" alt="" height="173px" width="173px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">IBSECLERK</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">IBSE PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">RBI GRADE</a>
+                    </div>
+                  </div>
+                  
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">SBI PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">IBPS PO</a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href="">NABARD</a>
+                    </div>
+                  </div>
+                                    
+    </div>
+    </div>
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+                <br>
+                 <h1 style="text-align : center; font-size : 20px; color : #3b5999; padding-bottom : 10px;">MBA</h1>
+                  <img class="img-responsive center-block" style = " float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/manager.png" alt="" height="150px" width="150px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> CAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> CMAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> XAT </a>
+                    </div>
+                  </div>
+                  
+                    <div class="row" style=" margin-bottom : 20px; color : #3b5999;">
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> MHCET </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> NMAT </a>
+                    </div>
+                    <div class="col-md-4" style="text-align : center;">
+                      <a href=""> SNAP </a>
+                    </div>
+                  </div>
+                                    
+
+      </div></div>
+    <div class="col-lg-4" style="margin-top : 20px; margin-bottom : 20px;"><div style="padding-bottom: 10px;">
+<br>
+                  <h1 style="text-align : center; font-size : 20px; color : #3b5999; padding-bottom : 10px;">Government and Insurance Exams</h1>
+                  <img class="img-responsive center-block" style = " float : center; border-radius : 10px; padding : 10px 0px 10px 0px;" src="img/govt.png" alt="" height="150px" width="150px">
+                  
+                  <hr style="border-color : #ffffff; background-color : #ffffff; margin-bottom : 10px;  ">
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-6" style="text-align : center;">
+                      <a href=""> SSC CGL </a>
+                    </div>
+                    <div class="col-md-6" style="text-align : center;">
+                      <a href=""> LIC AAQ </a>
+                    </div>
+                  </div>
+                  
+                  <div class="row" style="color : #3b5999; margin-bottom : 20px;">
+                    <div class="col-md-6" style="text-align : center;">
+                      <a href="">UIIC AQ</a>
+                    </div>
+                    <div class="col-md-6" style="text-align : center;">
+                      <a href="">RAILWAYS RRB</a>
+                    </div>
+                    
+                  </div>
+                                    
+
+    </div></div>
+  
+    </div>
+
+          
+        </div>
+
+
+
+     
+    </div>
+
+
+
+<br>
+<br>
+<br>
     
+      
 
 
-    <footer class="footer" style="background-color : #3b5999;">
+ <footer class="footer" style="background-color : #3b5999;">
           <div class="container">
               <div class="row">
             <div class="col-md-3 portfolio-item" style="text-align : left;">
@@ -842,12 +940,42 @@ span{
 
 
 
-  <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="js/bootstrap-hover-dropdown.min.js"></script>
-  <script src="js/headroom.min.js"></script>
-  <script src="js/jQuery.headroom.min.js"></script>
-  <script src="js/template.js"></script>
+<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: left;
+        margin-right: 10px;
+        color: #3B5999;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #3B5999;
+    }
+</style>
+
+<!-- Bootstrap FAQ - END -->
+
+</div>
+
 </body>
 </html>
